@@ -1,76 +1,76 @@
 // ########## Exercise 01 ##########
 var emptyArray = [];
 emptyArray.length
-Answer: 
+Answer: 0
 
 multiTypeArray = [0, 1, "two", 
                 function () { return 3; }, 
                 {value1: 4, value2: 5}, [6, 7]];
 
 console.log(multiTypeArray[0])
-Answer:
+Answer: 0
 
 console.log(multiTypeArray[2])
-Answer:
+Answer: two
 
 console.log(multiTypeArray[3]())
-Answer:
+Answer: 3
 
 console.log(multiTypeArray[4].value1)
-Answer:
+Answer: 4
     
 console.log(multiTypeArray[4]["value2"])
-Answer:
+Answer: 5
 
 console.log(multiTypeArray[5][0])
-Answer:
+Answer: 6
 
 // ########## Exercise 02 ##########
 var array = [];
 array[0] = 1;
 console.log(array)
-Answer:
+Answer: [1]
 
 array[1] = 2;
 console.log(array)
-Answer:
+Answer: [1, 2]
 
 array.push(3);
 console.log(array)
-Answer:
+Answer: [3]
 
 // ########## Exercise 03 ##########
 var fourNumberArray = [1, 2, 3, 4];
 
 console.log(fourNumberArray.length)
-Answer:
+Answer: 4
 
 fourNumberArray.push(5, 6);
 console.log(fourNumberArray.length)
-Answer:
+Answer: 6
 
 // ########## Exercise 04 ##########
 var array = ["peanut", "butter", "and", "jelly"];
 console.log(array.slice(0, 1))
-Answer:
+[""]Answer: ["Peanut"]
 
 console.log(array.slice(0, 2))
-Answer:
+Answer: ["Peanut", "butter"]
 
 console.log(array.slice(2, 2))
-Answer:
+Answer: [""]
 
 console.log(slice(2, 20))
-Answer:
+Answer: undefined
 
 console.log(array.slice(3, 0))
-Answer:
+Answer: [""]
 
 console.log(array.slice(3, 100))
-Answer:
+Answer: ["jelly"]
 
 console.log(array.slice(5, 1))
-Answer:
+Answer: [""]
 
 // ########## Exercise 05 ##########
 var array = [ "zero", "one", "two", "three", "four", "five" ];
@@ -81,38 +81,38 @@ var array = [ "zero", "one", "two", "three", "four", "five" ];
 
 passedByReference(array);
 console.log(array[1])
-Answer:
+Answer: changed in function
 
 var assignedArray = array;
 assignedArray[5] = "changed in assignedArray";
 console.log(array[5])
-Answer:
+Answer: changed in assignedArray
 
 var copyOfArray = array.slice()
 copyOfArray[3] = "changed in copyOfArray";
 console.log(array[3])
-Answer:
+Answer: three
   
 var array = [1, 2];
 array.push(3);
 console.log(array)
-Answer:
+Answer: [1, 2, 3]
 
 var poppedValue = array.pop();
 console.log(poppedValue)
-Answer:
+Answer: five
 
 console.log(array)
-Answer:
+Answer: [ "zero", "one", "two", "three", "four" ]
 
 var array = [1, 2];
 array.unshift(3);
 console.log(array)
-Answer:
+Answer: [3, 1, 2]
 
 shiftedValue = array.shift();
 console.log(shiftedValue)
-Answer:
+Answer: 3
 
 console.log(array)
-Answer:
+Answer: [1, 2]
