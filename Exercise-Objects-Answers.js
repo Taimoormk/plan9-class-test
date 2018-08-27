@@ -2,13 +2,13 @@
 var megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
 
 console.log(megalomaniac.mastermind)
-Answer: Joker
+Answer:
 
 console.log(megalomaniac.henchwoman)
-Answer: Harley
+Answer:
 
 console.log(megalomaniac.henchWoman)
-Answer: Harley
+Answer:
 
 // ########## Exercise 02 ##########
 var currentDate = new Date();
@@ -24,8 +24,7 @@ var megalomaniac = {
 };
 
 console.log(currentYear)
-Answer: 2018
+Answer:
 
 console.log(megalomaniac.calculateAge())
-Answer: 2018 - 1970
-48
+Answer:

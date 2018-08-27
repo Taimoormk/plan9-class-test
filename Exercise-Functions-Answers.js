@@ -4,7 +4,7 @@ function add(a, b) {
 }
 
 console.log(add(1, 2))
-Answer: 3
+Answer:
 
 // ########## Exercise 02 ##########
 var message = "Outer";
@@ -18,12 +18,13 @@ function overrideMessage() {
 }
 
 console.log(getMessage())
-Answer: Outer
+Answer: 
+
 console.log(overrideMessage())
-Answer: Inner
+Answer:
     
 console.log(message)
-Answer: Inner
+Answer:
 
 // ########## Exercise 03 ##########
 var variable = "top-level";
@@ -36,7 +37,7 @@ function parentfunction() {
 }
 
 console.log(parentfunction())
-Answer: local
+Answer:
 
 // ########## Exercise 04 ##########
 makeMysteryFunction(makerValue) {
@@ -50,7 +51,7 @@ var mysteryFunction3 = makeMysteryFunction(3);
 var mysteryFunction5 = makeMysteryFunction(5);
 
 console.log(mysteryFunction3(10) + mysteryFunction5(5))
-Answer: 
+Answer:
 
 // ########## Exercise 05 ##########
 function returnFirstArg(firstArg) {
@@ -58,7 +59,7 @@ function returnFirstArg(firstArg) {
 }
 
 console.log(returnFirstArg("first", "second", "third"))
-Answer: first
+Answer:
 
 
 function returnSecondArg(firstArg, secondArg) {
@@ -66,7 +67,7 @@ function returnSecondArg(firstArg, secondArg) {
 }
 
 console.log(returnSecondArg("only give first arg"))
-Answer: undefined
+Answer:
 
 function returnAllArgs() {
   var argsArray = [];
@@ -74,10 +75,10 @@ function returnAllArgs() {
     argsArray.push(arguments[i]);
   }
   return argsArray.join(",");
-} 
+}
 
 console.log(returnAllArgs("first", "second", "third"))
-Answer: first, second, third
+Answer:
 
 // ########## Exercise 06 ##########
 var appendRules = function(name) {
@@ -90,8 +91,8 @@ var appendDoubleRules = function(name) {
 
 var praiseSinger = { givePraise: appendRules };
 console.log(praiseSinger.givePraise("John"))
-Answer: John rules!
+Answer:
 
 praiseSinger.givePraise = appendDoubleRules;
 console.log(praiseSinger.givePraise("Mary"))
-Answer: Mary totally rules!
+Answer:
